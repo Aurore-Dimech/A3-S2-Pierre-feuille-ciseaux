@@ -9,9 +9,9 @@
 </head>
 
 <body>
-  <section class="body">
+  <section class="body relative">
 
-    <div class="main">
+    <div class="main flex-col">
 
       <h1 class="text-center">Pierre Feuille Ciseaux</h1>
   
@@ -20,24 +20,31 @@
         <p><span id="first-player-score"></span> - <span id="second-player-score"></span></p>
       </div>
   
-      <div class="justify-center">
+      <div class="justify-center grow">
         <div class="flex-row">
-          <div class="player-center">
-            <p class="text-center">Joueur 1</p>
-            <img src="assets/undefined.png" class="rounded grow" id="first-player-display-move"/>
+          <div class="player-center" id="first-player-card">
+            <p class="text-center text-18">Joueur 1</p>
+            <div class="grow card-img-container">
+              <img src="assets/undefined.png" class="rounded  player-move-image" id="first-player-display-move"/>
+            </div>
           </div>
-          <div class ="flex-1 relative">
-            <p id="decount" class="absolute text-30"></p>
+          <div class ="flex-1 relative flex-col">
+            <p id="decount" class="absolute text-30 text-red"></p>
             <div id="webcam-container"> </div>
-            <div id="label-container"></div>
             <button id="capture-button">Enregistrer son coup</button>
           </div>
-          <div class="player-center">
-            <p class="text-center">Joueur 2</p>
-            <img src="assets/undefined.png" class="rounded grow" id="second-player-display-move"/>
+          <div class="player-center " id="second-player-card">
+            <p class="text-center text-18">Joueur 2</p>
+            <div class="grow card-img-container">
+              <img src="assets/undefined.png" class="rounded player-move-image" id="second-player-display-move"/>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="absolute winner-container hidden">
+      <p class="winner-announcer text-30"></p>
     </div>
 
     <div class="bottom-historic">
