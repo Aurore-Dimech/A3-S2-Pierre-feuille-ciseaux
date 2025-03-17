@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.main {
+    height: 70%;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    text-align : center;
+    padding : 2rem 0;
+    gap : .5rem;
+}
+
+.flex-col > p {
+    font-size : 24 px
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-center: center;
+}
+
+.text-center {
+    text-align: center;
+    margin-top : 1rem;
+}
+
+.justify-center{
+    display: flex; 
+    width : 100%;
+    justify-content: center;
+
+}
+
+.player-center{
+    width: 100%; 
+    text-align: center;
+    flex: 1;
+    padding : 0 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.bottom-historic {
+    text-align: center;
+    height: 40%;
+    width : 100%; 
+    padding : 1rem 0;
+    border-top : 1px solid red; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.historic {
+    flex-grow: 1;
+    overflow-y: scroll;
+    display:  flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.little-illustration {
+    height: 40px;
+}
+
+.player.number {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    width: 100%;
+}
+
+img {
+    width: 4rem; 
+    height: 4rem; 
+    object-fit: contain;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    left: translate(-50%)
+}
+
+.text-30 {
+    font-size: 30px;
+}
+
+.grow {
+    flex-grow: 1;
+    align-items: center;
+}

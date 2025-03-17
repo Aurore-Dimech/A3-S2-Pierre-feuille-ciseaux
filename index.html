@@ -1,0 +1,58 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pierre feuille ciseau</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="body">
+
+    <div class="main">
+
+      <h1 class="text-center">Pierre Feuille Ciseaux</h1>
+  
+      <div class="flex-col">
+        <h2>Score : </h2>
+        <p><span id="first-player-score"></span> - <span id="second-player-score"></span></p>
+      </div>
+  
+      <div class="justify-center">
+        <div class="flex-row">
+          <div class="player-center">
+            <p class="text-center">Joueur 1</p>
+            <img src="assets/undefined.png" class="rounded grow" id="first-player-display-move"/>
+          </div>
+          <div class ="flex-1 relative">
+            <p id="decount" class="absolute text-30"></p>
+            <div id="webcam-container"> </div>
+            <div id="label-container"></div>
+            <button id="capture-button">Enregistrer son coup</button>
+          </div>
+          <div class="player-center">
+            <p class="text-center">Joueur 2</p>
+            <img src="assets/undefined.png" class="rounded grow" id="second-player-display-move"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-historic">
+      <h3>Historique</h3>
+      <div class="historic player" id="history">
+        
+      </div>
+    </div>
+  </section>
+
+   
+
+    
+
+  <script src="sketch.js"></script>
+</body>
+
+</html>
