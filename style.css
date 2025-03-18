@@ -1,6 +1,7 @@
-* {
+body, html, * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -10,11 +11,10 @@ h1 {
 .body {
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
 }
 
 .main {
-    height: 70%;
+    height: 70vh;
     justify-content: space-evenly;
 }
 
@@ -68,7 +68,7 @@ h1 {
 
 .bottom-historic {
     text-align: center;
-    height: 40%;
+    height: 30vh;
     width : 100%; 
     padding : 1rem 0;
     border-top : 1px solid red; 
